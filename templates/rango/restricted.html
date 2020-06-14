@@ -1,0 +1,18 @@
+{% extends 'base_bootstrap.html' %}
+{% load static %}
+
+{% block title_block %}
+    Login
+{% endblock %}
+
+{% block body_block %}
+    <div class="jumbotron p-4">
+        <div class="container">
+            <h3 class="jumbotron-heading">
+                {% if bold_message %}
+                    {{ bold_message}}
+                {% endif %}
+            </h3>
+        </div>
+    </div>
+{% endblock %}
